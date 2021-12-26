@@ -111,7 +111,7 @@ func (c *Color) Parse(data []byte, ignoreW byte) {
 	c.R = data[0]
 	c.G = data[1]
 	c.B = data[2]
-	FF = data[3]
+	c.W = data[3]
 	if ignoreW == False {
 		c.UseW = true
 	} else {
