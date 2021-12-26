@@ -99,10 +99,10 @@ func ModeName(mode uint8) string {
 }
 
 func (c Color) Format() []byte {
+	ignoreW := True
 	if c.UseW {
 		ignoreW = False
 	}
-
 	return []byte{c.R, c.G, c.B, c.W, ignoreW}
 }
 
