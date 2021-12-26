@@ -57,5 +57,5 @@ func Checksum(data []byte) byte {
   }
 	}
 	}
-  return sum;
+  return sum
 }
