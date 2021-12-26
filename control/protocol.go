@@ -246,8 +246,8 @@ const (
 )
 
 const (
-	True  = uint8(0xf0)
-	False = uint8(0x0f)
+	True  = uint8(0x01)
+	False = uint8(0x00)
 	On    = uint8(0x23)
 	Off   = uint8(0x24)
 )
