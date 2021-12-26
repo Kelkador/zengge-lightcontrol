@@ -52,10 +52,13 @@ func Checksum(data []byte) byte {
 	}
 	if sum > 16 {
 	checkValue(sum) {
-  		while (sum >= 16) {
+  		while (sum > 16) {
     			sum - 16;
   }
 	}
+		else if sum <= 16 {
+			return sum
+		}
 	}
   return sum
 }
