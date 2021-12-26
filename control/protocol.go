@@ -111,7 +111,7 @@ func (c *Color) Parse(data []byte, ignoreW byte) {
 	c.R = data[0]
 	c.G = data[1]
 	c.B = data[2]
-	c.W = data[3]
+	FF = data[3]
 	if ignoreW == False {
 		c.UseW = true
 	} else {
@@ -245,7 +245,7 @@ const (
 )
 
 const (
-	True  = uint8(0x00)
+	True  = uint8(0xf0)
 	False = uint8(0x0f)
 	On    = uint8(0x23)
 	Off   = uint8(0x24)
