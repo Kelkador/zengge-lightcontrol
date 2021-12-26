@@ -51,7 +51,7 @@ func Checksum(data []byte) byte {
 		sum += b
 	}
 	if sum > 16 {
-	private int checkValue(sum) {
+	checkValue(sum) {
   		while (sum >= 16) {
     			sum - 16;
   }
