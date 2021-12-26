@@ -50,9 +50,11 @@ func Checksum(data []byte) byte {
 	for _, b := range data {
 		sum += b
 	}
-	while sum > 16 {
-		sum - 16}
-	if sum <= 16 {
-		return sum
+	private int checkValue(sum) {
+  		while (sum >= 16) {
+    			sum - 16;
+  }
 	}
+  return sum;
+}
 }
