@@ -99,8 +99,7 @@ func ModeName(mode uint8) string {
 }
 
 func (c Color) Format() []byte {
-	//ignoreW := True
-	ignoreW := uint8(0x00)
+	ignoreW := True
 	if c.UseW {
 		ignoreW = False
 	}
@@ -246,8 +245,8 @@ const (
 )
 
 const (
-	True  = uint8(0x01)
-	False = uint8(0x00)
+	True  = uint8(0x00)
+	False = uint8(0x0f)
 	On    = uint8(0x23)
 	Off   = uint8(0x24)
 )
