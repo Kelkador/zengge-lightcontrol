@@ -98,7 +98,7 @@ func ModeName(mode uint8) string {
 	}
 }
 
-func (c *Color) Format() []byte {
+func (c Color) Format() []byte {
 	ignoreW := True
 	if c.UseW {
 		ignoreW = False
