@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/Kelkador/zengge-lightcontrol/control"
-	"github.com/Kelkador/zengge-lightcontrol/local"
-	"github.com/Kelkador/zengge-lightcontrol/manage"
-	"github.com/Kelkador/zengge-lightcontrol/remote"
+	"github.com/vikstrous/zengge-lightcontrol/control"
+	"github.com/vikstrous/zengge-lightcontrol/local"
+	"github.com/vikstrous/zengge-lightcontrol/manage"
+	"github.com/vikstrous/zengge-lightcontrol/remote"
 )
 
 func addAll(parent *cobra.Command, children []cobra.Command) {
@@ -201,6 +201,7 @@ func main() {
 	}
 
 	execCmds := []cobra.Command{
+		{
 			Use:   "set-color",
 			Short: "change the color of the lightbulb",
 			RunE: func(cmd *cobra.Command, args []string) error {
