@@ -201,8 +201,7 @@ func main() {
 	}
 
 	execCmds := []cobra.Command{
-		{
-			Use:   "set-color-red",
+			Use:   "set-color",
 			Short: "change the color of the lightbulb",
 			RunE: func(cmd *cobra.Command, args []string) error {
 				colorErr := fmt.Errorf("please provide a color name or hex color")
