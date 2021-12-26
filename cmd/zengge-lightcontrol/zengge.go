@@ -213,7 +213,7 @@ func main() {
 				if color == nil {
 					return colorErr
 				}
-				controller.SetColor(Color{255, 0, 0, 0, false})
+				controller.SetColor(Color{FF, 00, 00, 00, false})
 				return nil
 			},
 		},
