@@ -7,7 +7,7 @@ type Color struct {
 	G    uint8
 	B    uint8
 	W    uint8
-	UseW bool
+	UseW uint8
 }
 
 type State struct {
